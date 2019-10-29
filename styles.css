@@ -1,0 +1,147 @@
+@font-face {
+    src: url("img/mainFont.ttf");
+    font-family: mainFont;
+}
+a{
+    text-decoration:none;
+    color: #FFFFF0;
+}
+body{
+    background-color: black;
+    background-image: url("img/bg.jpg");
+    font-family: mainFont;
+    color: #FFFFF0; // цвет шрифтов
+}
+.all{
+    width: 80%;
+    border: 1px solid #B2D5E1;
+    margin: auto;
+    background-color: black;  // цвет всей параши
+}
+.topMenu{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    //border: 1px solid black;
+    box-shadow: 0 0 3px #B2D5E1;
+    padding: 0 10px;
+    background-color: #890C00;
+}
+.content>p>img{
+    width: 300px;
+    margin:0 20px;
+}
+.topMenu>div{
+    padding: 10px;
+}
+.topMenu>div:hover{
+    background: linear-gradient(180deg, #B2D5E1, #5391A6);
+    cursor: pointer;
+}
+.hat{
+    background-image: url("img/bgTitle.png");
+    background-size: 60%;
+    background-position: center;
+    //background-color: red;
+    height: 200px;
+    font-size: 56px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hat>div{
+    text-shadow: black 0 0 2px;
+}
+.position{
+    display: flex;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 5px;
+    background-color:#80180E; //#890C00; // цвет карточек
+}
+.position>.img{
+    width: 30%;
+    margin-right: 10px;
+}
+.position>.img>img{
+    width: 240px;
+}
+.other>.title{
+    font-size: 22px;
+}
+.other{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.buttons{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cost{
+    color: yellow;
+    font-weight: bolder;
+    margin: 15px 0;
+}
+.btn{
+    background-color: green;
+    border-radius: 8px;
+    padding: 8px 50px;
+}
+.btn:hover{
+    box-shadow: 0 0 5px black;
+}
+.position:hover{
+    cursor: pointer;
+    background-color: #A61D10;
+}
+.form{
+    background-color: #80180E;
+    margin: 20px;
+    padding: 10px;
+    padding-top: 15px;
+    width: 40%;
+}
+.form .title{
+    font-size: 20px;
+}
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input, textarea{
+    height: 26px;
+    width: 260px;
+}
+.inlineContent{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 60px;
+}
+.send{
+    display: flex;
+    justify-content: center;
+}
+.more{
+    padding: 2px 15px;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more>img{
+    width: 18px;
+    margin-left: 5px;
+}
+.more:hover{
+    text-shadow: 0 0 3px black;
+    text-decoration: underline;
+}
