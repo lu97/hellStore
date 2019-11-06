@@ -62,14 +62,14 @@ main();
 
     function bucketTop() {
         container.innerHTML = [];
-       var table = document.createElement("table");
-       table.className = "table";
+        var table = document.createElement("table");
+        table.className = "table";
         table.innerHTML = "<tr><td>Название</td><td>Цена</td><td>Удалить из корзины</td></tr>";
-        for (var i = 0; i< bucket.length; i++){
-            table.innerHTML += "<tr><td>"+ bucket[i].title
-                +"</td><td>"+ bucket[i].price
-                +"</td><td>&#9766;</td></tr><div class=\"btn sale bucketSale\" onclick=\"sale()\">Оформиить заказ</div>";
+        for (var i = 0; i < bucket.length; i++) {
+            table.innerHTML += "<tr><td>" + bucket[i].title
+                + "</td><td>" + bucket[i].price
+                + "</td><td>&#9766;</td></tr>";
         }
-
+        table.innerHTML += "<div class=\"btn sale bucketSale\" onclick=\"sale()\">Оформиить заказ</div>";
         container.appendChild(table);
-
+    }
